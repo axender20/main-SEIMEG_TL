@@ -1,0 +1,14 @@
+void thread_blink_led(void* parametres);
+
+xTaskCreate(thread_blink_led, "tsk_led", 256, NULL, 1, NULL);
+
+void thread_blink_led(void* parametres) {
+  pinMode(led_pcb, OUTPUT);
+  
+  for (;;) {
+    digitalWrite(led_pcb, !digitalRead(led_pcb));
+    delay_frms(500);
+  }
+
+  vTaskDelete(NULL);
+}
