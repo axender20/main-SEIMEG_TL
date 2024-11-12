@@ -2,7 +2,9 @@
 #ifndef _GEN_DEF_H_
 #define _GEN_DEF_H_
 
-#define __FIRMWARE_VERSION__ "2.2.2"
+//? Posible firts version
+///@brief Version de gestion "0.1.2a snph-sb"
+#define __FIRMWARE_VERSION__ "0.0.1"
 
 #include "pico/stdlib.h"
 #include "Model_Definition.h"
