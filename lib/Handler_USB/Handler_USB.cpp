@@ -63,6 +63,7 @@ void task_usb() {
       else if (error_code == decode_options::CMD_confirm_UPDATE) {
         H_DEBUG_PRINTLN("confirm bootloader MODE");
         uart_usb_port.print("<N_F_OK>");
+        delay_frms(50);
         ctrllm_entry_bootloader_mode();
       }
     }
