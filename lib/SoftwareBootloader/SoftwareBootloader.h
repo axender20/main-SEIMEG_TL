@@ -8,8 +8,11 @@
 #include "hardware/structs/watchdog.h"
 
 //? Value to access to bootloader
-#define ENTRY_MAGIC 0xb105f00d
+#define BOOTLOADER_ENTRY_MAGIC 0xb105f00d
 
 /// @brief fnc para acceder al bootloader (serial-flash) 
 void entry_on_bootloader();
+
+/// @brief fnc para resetear de forma segura (watchdog) al controlador
+void software_reset();
 #endif

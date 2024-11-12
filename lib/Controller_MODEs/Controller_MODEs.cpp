@@ -76,10 +76,10 @@ void ctrllm_entry_update_mode() {
 
 void ctrllm_exit_config_mode() {
   //TODO: Agregar validaciones para reiniciar de forma segura al uC
-  rp2040.restart();
+  software_reset();
 }
 
 void ctrllm_exit_update_mode() {
   //TODO: Agregar validaciones para reiniciar de forma segura al uC
-  rp2040.restart();
+  software_reset();
 }
