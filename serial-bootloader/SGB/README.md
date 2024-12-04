@@ -19,7 +19,7 @@ cd serial-bootloader/SGB
 # Para subir el proyecto mediante el bootloader 
 *Es necesario compilar el proyecto en "release_SGB"
 
-cd serial-bootloader
+cd serial-bootloader/SGB
 {COM} el puerto al que esta conectado
 
 ..\./serial-flash.exe COM28 ..\..\.pio\build\release_SGB\firmware.elf

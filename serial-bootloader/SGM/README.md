@@ -19,7 +19,7 @@ cd serial-bootloader\SGM
 # Para subir el proyecto mediante el bootloader 
 *Es necesario compilar el proyecto en "release_SGM"
 
-cd serial-bootloader
+cd serial-bootloader\SGM
 {COM} el puerto al que esta conectado
 
-.././serial-flash.exe COM28 ..\..\.pio\build\release_SGM\firmware.elf
+..\./serial-flash.exe COM28 ..\..\.pio\build\release_SGM\firmware.elf
