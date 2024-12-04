@@ -2,6 +2,7 @@
 #include "DEBUG.h"
 #include "Controller_MODEs.h"
 #include "Handler_USB.h"
+#include "metadata.h"
 
 #define UART_TASK_PRIO (tskIDLE_PRIORITY) + 2
 
